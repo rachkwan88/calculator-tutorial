@@ -16,7 +16,7 @@ public class App {
             String userInput = scanner.nextLine().trim();
 
             if (userInput.equals("")) {
-                System.exit(0);
+                break;
             }
 
             double answer = 0;
@@ -28,6 +28,6 @@ public class App {
             }
 
         }
-
+        scanner.close();
     }
 }

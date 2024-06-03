@@ -2,6 +2,9 @@ package com.example;
 
 public class Calculator {
 
+    public Calculator() {
+    }
+
     private String[] parse(String input) throws Exception {
 
         String op1 = "";
