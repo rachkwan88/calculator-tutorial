@@ -26,6 +26,11 @@ public class AppTest {
         assertTrue(c.calc("000*000") == 0);
         assertTrue(c.calc("00000001/1") == 1);
         assertTrue(c.calc("0+588583882") == 588583882);
+        assertTrue(c.calc("(1+1)+1") == 3);
+        assertTrue(c.calc("(1+1)+(2+2)") == 6);
+        assertTrue(c.calc("(1+1)*2") == 4);
+        assertTrue(c.calc("4*(2+2)") == 16);
+        assertTrue(c.calc("((1+1)+(1+(3+3)))+((2+2)+2)") == 15);
 
         // negative test cases
         try {

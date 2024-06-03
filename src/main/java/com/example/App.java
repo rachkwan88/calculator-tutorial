@@ -24,7 +24,8 @@ public class App {
                 answer = c.calc(userInput);
                 System.out.println(answer);
             } catch (Exception e) {
-                System.out.println("Input error; string is incorrect");
+                e.printStackTrace();
+                // System.out.println("Input error; " + e.getMessage());
             }
 
         }
